@@ -9,6 +9,7 @@ describe("login-validations", () => {
   });
   it("login happy path", () => {
     cy.visit(data.url);
+    cy.url().should('eq', 'https://guarnic-staging.web.app/')
     cy.wait(10000);
     cy.get(".m-bottom-7").contains("SIGN IN TO WORKLION");
     cy.get("#basic_email").type(data.admin.email);
