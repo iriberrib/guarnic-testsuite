@@ -1,8 +1,15 @@
 {
+    
     "admin": {
         "email": "benjamin.iriberri+soporte@guarnic.com",
         "password": "temp4now" 
     },
     "url": "https://guarnic-staging.web.app/",
+    "browserLaunchOptions": {
+        "args": [
+            "--disable-site-isolation-trials"
+        ]
+    },
+    "followRedirect": false,
     "title": "Home"
 }
